@@ -67,15 +67,9 @@ The [P] flags indicates that the test makes used of proxy socks.
 Tests
 =============
 
-Tests implemented : More than 60 tests (including variant test**) - 49 Unique tests (TTPs)
-
-** Some tests can be performed using native windows executable, cobalt strike functions and external tools (python, C#,...).
-
-
  .. image:: ./img/tool-header.png
- 	:width: 1000px
+ 	:width: 700px
  	:alt: Project
-
 
 The tests are splitted as followed: 
 --------------------------
@@ -84,84 +78,44 @@ The tests are splitted as followed:
 3. User All Tests
 4. Admin All Tests
 
+Tests implemented : More than 60 tests (including variant test**) - 49 Unique tests (TTPs)
 
+** Some tests can be performed using native windows executable, cobalt strike functions and external tools (python, C#,...).
 
-
-=============
-Usage
-=============
-
-1. Start proxy sock
---------------------------
- .. code-block:: console
- 
-Always setup the proxy socks 
-  
- .. image:: ./img/socks.png
- 	:width: 250px
+ .. image:: ./img/vtest.png
+ 	:width: 600px
  	:alt: Project
 
-All tests with marked with [p] as below, will need proxy socks to run (need to match proxychains' config). 
+The screenshot below shosw information about each tests (variant test) (whether proxy is used, a .NET binary, cobalt strike function, windows binary,...)
 
- .. image:: ./img/socks-test.png
- 	:width: 650px
- 	:alt: Project
-  
-2. Set sleep
+ .. image:: ./img/info.png
+ 	:width: 1250px
+ 	:alt: img-broken  
+
+
+Multiple Test
 --------------------------
- .. code-block:: console
- 
-set sleep to 0 (not mandatory but better!) 
- 
- .. image:: ./img/sleep.png
- 	:width: 400px
- 	:alt: Project  
 
-3. Manually upload up.zip and prep-exf.ps1 in C:\temp
------------------------------------------------------------
- 
-Prepare the files to be exfiltrated:
-Run the powershell script.
+The multiple test can be either in the user or admin context. It is also possible to specify the delay between each test (eg. 5mins).
 
-  
-  
-4. Either choose a unit test or mulitple tests (admin or user)
------------------------------------------------------------
- 
-Unit/Multiple Tests:
  .. code-block:: console
  
  .. image:: ./img/AllTests.png
  	:width: 400px
  	:alt: img-broken  
-	
+
+
+
 
 =============
 Timeline
 =============
 	
-The tests are related to the beacon as well as timeline. When you run the timeline, you will have access to the log related to the current beacon.
+This functionality is important since it can be used to match detection vs TTPs on the EDR console by using the time the test was performed. 
 
  .. image:: ./img/timeline.png
- 	:width: 750px
+ 	:width: 1000px
  	:alt: img-broken  
 	
 
-=============
-Excel 
-=============
-	
-The excel file contains information about each tests (whether proxy is used, a .NET binary, cobalt strike function, windows binary,...)
-
- .. image:: ./img/info.png
- 	:width: 1250px
- 	:alt: img-broken  
-	
-As well as the previous tests EDR solutions.
-
- .. image:: ./img/tests.png
- 	:width: 1250px
- 	:alt: img-broken  
-
-	
 
