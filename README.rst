@@ -24,7 +24,7 @@ INTRO
 
 As part of the purple team activity, I was involved in testing different EDRs solutions to evalutate their detection capabilities by emulating attacks using Techniques, Tactics, and Procedures (TTP) used by adversaries. I wanted to automate the tests, to make it easier for us as well as to make a consistent and effective comparison between the different solutions.
 
-My first consideration was the project **Atomic Red Team** , it is a really nice project and initiative but despite that, some of my objectives would not be achievable such as not to use powershell, having better flexibility and some custom (ninja) feature.  
+My first consideration was the project **Atomic Red Team** , it is a really nice project and initiative. Unfortunately, the project did not allowed me to met some of my objectives such as not to use powershell, having better flexibility and some custom (ninja) features.  
 
 Link: https://github.com/redcanaryco/atomic-red-team
 
