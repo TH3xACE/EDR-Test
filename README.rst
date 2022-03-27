@@ -25,9 +25,9 @@ INTRO
 As part of the purple team activity, I am involved in testing different EDRs solutions to evaluate their detection capabilities by emulating attacks using Techniques, Tactics, and Procedures (TTP) used by adversaries. I wanted to automate the tests, to make it easier for us as well as to make a consistent and effective comparison between the different solutions.
 
 My first consideration was the project **Atomic Red Team** , it is a really nice project and initiative. Unfortunately, the project did not allowed me to met some of my objectives such as 
-- not to use powershell
-- to have better flexibility
-- some custom (ninja) features
+-not to use powershell
+-to have better flexibility
+-some custom (ninja) features
 
 Link: https://github.com/redcanaryco/atomic-red-team
 
@@ -118,7 +118,7 @@ The multiple test can be either in the user or admin context. It is also possibl
 Timeline
 =============
 	
-This functionality is important since it can be used to match detection on the EDR console vs TTPs used by using the time the test was performed. 
+This functionality is important since it can be used to match detection on the EDR console vs TTPs used duirng the test. The time the tests were performed can be use to perform this match.
 
  .. image:: ./img/timeline.png
  	:width: 1000px
@@ -128,7 +128,7 @@ This functionality is important since it can be used to match detection on the E
 Comparing EDRs solutions
 =============
 
-Due to security concerns, I can't provide the solutions that I have tested nor the results but the project below might give you an insight but it should be noted that the result is at a specific point in time. Some of the EDRs detection capability evolved rapidly.
+Due to security concerns, I can't provide the solutions that I have tested nor the results but the project below might give you an insight. It should also be noted that the results presented by the below project is relevant at a specific point in time due to the fact that some of the EDRs detection capability evolved over time.
 
 Project: https://attackevals.mitre-engenuity.org/enterprise/participants/?rounds=carbanak_fin7
 
