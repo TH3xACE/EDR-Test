@@ -65,7 +65,7 @@ The [P] flags indicates that the test makes used of proxy socks.
 
 This is the CNA code for the menu:
 
- .. image:: ./img/Template-Menu.png.png
+ .. image:: ./img/Template-Menu.png
  	:width: 650px
  	:alt: Project
 
