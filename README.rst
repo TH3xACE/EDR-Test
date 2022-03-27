@@ -50,6 +50,23 @@ Link: https://attack.mitre.org/
 
 The framework was used to built the CNA scripts with the different tests, it should be noted that at the time of the writing, I have not yet implemented all the tests from the framework but only those with high interest and relevant to the objectives were prioritised in the development of the script.
 
+=============
+Menu
+=============
+
+Below is the menu where it is possible to either select for unit test or multiple tests in either the user or admin context. 
+
+
+ .. image:: ./img/socks-test.png
+ 	:width: 650px
+ 	:alt: Project
+
+The [P] flags indicates that the test makes used of proxy socks.
+
+=============
+Tests
+=============
+
 Tests implemented : More than 60 tests (including variant test*) - 49 Unique tests (TTPs)
 
 * Some tests can be performed using native windows executable, cobalt strike functions and external tools (python, C#,...).
@@ -60,16 +77,14 @@ Tests implemented : More than 60 tests (including variant test*) - 49 Unique tes
  	:alt: Project
 
 
-=============
-Tests
-=============
-
 The tests are splitted as followed: 
 --------------------------
 1. User Unit Test
 2. Admin Unit Test
 3. User All Tests
 4. Admin All Tests
+
+
 
 
 =============
