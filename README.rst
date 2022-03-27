@@ -63,7 +63,7 @@ Below is the menu where it is possible to either select for unit test or multipl
 
 The [P] flags indicates that the test makes used of proxy socks.
 
-This is the CNA code for the menu:
+This is a portion of the CNA code for the menu:
 
  .. image:: ./img/Template-Menu.png
  	:width: 500px
