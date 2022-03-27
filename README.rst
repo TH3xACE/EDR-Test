@@ -141,5 +141,6 @@ Link: "https://mitre-evals.kb.europe-west1.gcp.cloud.es.io:9243/app/dashboards#/
 Note
 =============
 
-The project EDR-Test is not published for now but can be shared if you contribute (at least 3 tests - including variant -> Create a pull) or for sponsor contact me on adblue
+The project EDR-Test is not published online for now but can be shared if you contribute (at least 3 tests - including variant -> Create a pull) or for sponsor contact me on adblue2017[@]gmail[.]com
+
 List of already implemented tests : /img/test-implemented.png
