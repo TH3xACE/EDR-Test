@@ -26,9 +26,9 @@ As part of the purple team activity, I am involved in testing different EDRs sol
 
 My first consideration was the project **Atomic Red Team** , it is a really nice project and initiative. Unfortunately, the project did not allowed me to met some of my objectives such as 
 
-* **not to use powershell**
-* **to have better flexibility**
-* **some custom (ninja) features**
+* not to use powershell
+* to have better flexibility
+* some custom (ninja) features
 
 Link: https://github.com/redcanaryco/atomic-red-team
 
