@@ -2,18 +2,9 @@
 
    <h1 align="center">
 
-.. image:: ./img/cs.jpg
- 	:width: 600px
- 	:alt: SG-EDR-Test
-.. raw:: html
-
    <br class="title">
-   SG-EDR-Test
+   EDR-Test
    <br>
-
-.. image:: https://img.shields.io/github/last-commit/TH3xACE/SG_AggressorScript?style=plastic
-   :target: 
-   :alt: Last Commit
 
 .. raw:: html
 
@@ -29,38 +20,25 @@
 INTRO
 =============
 
-**INFORMATION: The project is still under development and new functionalities will be added with time and there might be some issues, please create an issue if you found any. **
+**Who said Cobalt Strike was meant to be use only as an offensive tool (Red Team)?**
 
-This is a custom Aggressor Script for Cobalt Strike. The script was developped to make the life of red team's easier during EDR solution testing. The script is will continously be updated. 
+As part of the purple team activity, I was involved in testing different EDRs solutions to test their detection capability using emulated attacks. I decided to automate the test to make it easier for me and also to allow me to make a consistent and effective comparison between the different solutions.
 
-**Important: All the functionalities were tested with NO AV/EDR installed and some of them with AV/EDR. The main objective is to identify whether the tests are detected by them.**
+I firstly considered the project **Atomic Red Team** , it is a really nice project despite that, I decided to work on my own project due to several reasons, one being of them being not to use Powershell (if possible). I also wanted to have more flexibility and some custom features.
 
+Link: https://github.com/redcanaryco/atomic-red-team
+
+After some online searcg (Dr. google) to find some other (FREE) alternatives , I came to the conclusion that if I wanted to meet all my objectives, I needed to develop something myself. Since at that time, I wanted to improve my coding skills in Cobalt strike Aggressor Script (.cna) and it would also allow me to have the flexibility I was looking and yes, no powershell (I like powershell, nothing personal but better not to use it with EDR testing when possible). 
+
+
+
+
+
+ .. image:: ./img/tool-header.png
+ 	:width: 1000px
+ 	:alt: Project
 =============
-Overview
-=============
 
-This tool was developed with the idea to assist the Red Team in evaluating the detection of EDR/AV solutions in an automated way.
-
-=============
-Installation
-=============
-
-Requirements:
-*mimikatz-kit from cobalt strike (found in dependancy folder)* 
-*smbclient.py*
-*truncate*
-*ticketer.py*
-*services.py*
-*psexec.py*
-*wmiexec.py*
-
-
- .. code-block:: console
- 
- Step 1 :  Git clone the repo 
- 
- Step 2 :  Load the cna on Cobalt Strike (Cobalt Strike > Script Manager > Load )
- 
 =============
 Tests
 =============
