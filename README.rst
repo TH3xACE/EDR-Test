@@ -63,6 +63,13 @@ Below is the menu where it is possible to either select for unit test or multipl
 
 The [P] flags indicates that the test makes used of proxy socks.
 
+This is the CNA code for the menu:
+
+ .. image:: ./img/Template-Menu.png.png
+ 	:width: 650px
+ 	:alt: Project
+
+
 =============
 Tests
 =============
@@ -103,9 +110,6 @@ The multiple test can be either in the user or admin context. It is also possibl
  	:width: 400px
  	:alt: img-broken  
 
-
-
-
 =============
 Timeline
 =============
@@ -117,4 +121,5 @@ This functionality is important since it can be used to match detection on the E
  	:alt: img-broken  
 	
 
-
+NOTE: The project is not published for now but can be shared if you contribute (at least 3 tests - including variant -> Create a pull) or for sponsor .
+List of already implemented tests : /img/test-implemented.png
