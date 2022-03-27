@@ -67,9 +67,9 @@ The [P] flags indicates that the test makes used of proxy socks.
 Tests
 =============
 
-Tests implemented : More than 60 tests (including variant test*) - 49 Unique tests (TTPs)
+Tests implemented : More than 60 tests (including variant test**) - 49 Unique tests (TTPs)
 
-* Some tests can be performed using native windows executable, cobalt strike functions and external tools (python, C#,...).
+** Some tests can be performed using native windows executable, cobalt strike functions and external tools (python, C#,...).
 
 
  .. image:: ./img/tool-header.png
