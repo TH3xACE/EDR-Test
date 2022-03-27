@@ -137,6 +137,9 @@ Result on comparing the EDRs solution detection capability with reference to TTP
 
 Link: "https://mitre-evals.kb.europe-west1.gcp.cloud.es.io:9243/app/dashboards#/view/c2184e40-a13a-11eb-9d57-5de8e1bfb5ea?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))"
 
+=============
+Note
+=============
 
-NOTE: The project is not published for now but can be shared if you contribute (at least 3 tests - including variant -> Create a pull) or for sponsor .
+The project EDR-Test is not published for now but can be shared if you contribute (at least 3 tests - including variant -> Create a pull) or for sponsor contact me on adblue
 List of already implemented tests : /img/test-implemented.png
