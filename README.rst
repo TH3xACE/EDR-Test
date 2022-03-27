@@ -86,10 +86,9 @@ Tests implemented : More than 60 tests (including variant test**) - 49 Unique te
  	:width: 600px
  	:alt: Project
 
-The screenshot below shosw information about each tests (variant test) (whether proxy is used, a .NET binary, cobalt strike function, windows binary,...)
+The screenshot below shows information about some tests (variant test) (whether proxy is used, a .NET binary, cobalt strike function, windows binary,...)
 
- .. image:: ./img/info.png
- 	:width: 1250px
+ .. image:: ./img/info2.png
  	:alt: img-broken  
 
 
@@ -111,7 +110,7 @@ The multiple test can be either in the user or admin context. It is also possibl
 Timeline
 =============
 	
-This functionality is important since it can be used to match detection vs TTPs on the EDR console by using the time the test was performed. 
+This functionality is important since it can be used to match detection on the EDR console vs TTPs used by using the time the test was performed. 
 
  .. image:: ./img/timeline.png
  	:width: 1000px
