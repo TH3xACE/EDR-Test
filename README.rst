@@ -50,7 +50,7 @@ Link: https://attack.mitre.org/
 
 The framework was used to built the CNA scripts with the different tests, it should be noted that at the time of the writing, I have not yet implemented all the tests from the framework but only those with high interest and relevant to the objectives were prioritised in the development of the script.
 
-Tests implemented : More than 60 tests (including variant test*)
+Tests implemented : More than 60 tests (including variant test*) - 49 Unique tests (TTPs)
 
 * Some tests can be performed using native windows executable, cobalt strike functions and external tools (python, C#,...).
 
