@@ -97,6 +97,14 @@ Tests implemented : More than 60 tests (including variant test**) - 49 Unique te
  .. image:: ./img/vtest.png
  	:width: 600px
  	:alt: Project
+	
+Example of output on Cobalt Strike
+
+ .. image:: ./img/out.png
+ 	:width: 1000px
+ 	:alt: Project
+	
+
 
 The screenshot below shows information about some tests (variant test) (whether proxy is used, a .NET binary, cobalt strike function, windows binary,...)
 
