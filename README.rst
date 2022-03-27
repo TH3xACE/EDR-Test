@@ -10,7 +10,7 @@
 
    </h1>
 
-#CobaltStrike #AggresorScript #EDR #MITREAttack
+#CobaltStrike #AggresorScript #EDR #MITREAttack #PurpleTeam
 
 .. contents:: 
     :local:
@@ -120,7 +120,23 @@ This functionality is important since it can be used to match detection on the E
  .. image:: ./img/timeline.png
  	:width: 1000px
  	:alt: img-broken  
-	
+
+=============
+Comparison
+=============
+
+Due to security concerns, I can't provide the solutions that I have tested nor the results but this project might give you an insight but it should be noted that the result is at a specific point in time. Some of the EDRs detection capability evolved rapidly.
+
+ .. image:: ./img/EDRs.png
+ 	:width: 1000px
+ 	:alt: img-broken  
+
+
+Link: "https://mitre-evals.kb.europe-west1.gcp.cloud.es.io:9243/app/dashboards#/view/c2184e40-a13a-11eb-9d57-5de8e1bfb5ea?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))"
+
+
+
+
 
 NOTE: The project is not published for now but can be shared if you contribute (at least 3 tests - including variant -> Create a pull) or for sponsor .
 List of already implemented tests : /img/test-implemented.png
