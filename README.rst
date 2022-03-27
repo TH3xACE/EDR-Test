@@ -122,7 +122,7 @@ This functionality is important since it can be used to match detection on the E
  	:alt: img-broken  
 
 =============
-Comparison
+Comparing EDRs solutions
 =============
 
 Due to security concerns, I can't provide the solutions that I have tested nor the results but the project below might give you an insight but it should be noted that the result is at a specific point in time. Some of the EDRs detection capability evolved rapidly.
