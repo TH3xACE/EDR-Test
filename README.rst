@@ -31,7 +31,7 @@ My first consideration was the project **Atomic Red Team** , it is a really nice
 
 Link: https://github.com/redcanaryco/atomic-red-team
 
-After some online search (thanks to Dr. google) to find some other (FREE) alternatives. I came to the conclusion that if I wanted to meet all my objectives, I needed to get the hand dirty. So I decided to go for my own project but what Programming Language to use ? Since at that time, I was aiming to to improve my coding skills in Cobalt strike Aggressor Script (.cna) and that on top of that, it would allow me to achieve all my objectives, it was the way to go.
+After some online search (thanks to Dr. google) to find some other (FREE) alternatives. I came to the conclusion that if I wanted to meet all my objectives, I needed to get the hand dirty. So I decided to go for my own project but what Programming Language to use ? Since at that time, I was aiming to improve my coding skills in Cobalt strike Aggressor Script (.cna) and that on top of that, it would allow me to achieve all my objectives, it was the way to go.
 
 For those who don't know what I am talking about!
 
@@ -91,7 +91,7 @@ The tests are splitted as followed:
 
 Tests implemented : More than 60 tests (including variant test**) - 49 Unique tests (TTPs)
 
-** Some tests can be performed using native windows executable, cobalt strike functions and external tools (python, C#,...).
+** Some tests can be performed using either native windows executable or cobalt strike functions or external tools (python, C#,...).
 
  .. image:: ./img/vtest.png
  	:width: 600px
