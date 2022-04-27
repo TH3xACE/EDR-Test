@@ -22,7 +22,7 @@ INTRO
 
 **Who said Cobalt Strike was meant to be used only as an offensive tool (Red Team)?**
 
-As part of the purple team activity, I am involved in testing different EDRs solutions to evaluate their detection capabilities by emulating attacks using Techniques, Tactics, and Procedures (TTP) used by adversaries. I wanted to automate the tests, to make it easier for us as well as to make a consistent and effective comparison between the different solutions.
+As part of the purple team activity, I am involved in testing different EDRs solutions to evaluate their detection capabilities by emulating attacks using Techniques, Tactics, and Procedures (TTP) used by adversaries. I wanted to automate the tests, to make it easier for us as well as to allow us to make a consistent and effective comparison between the different solutions.
 
 My first consideration was the project **Atomic Red Team** , it is a really nice project and initiative. Unfortunately, the project did not allowed me to met some of my objectives such as 
 
