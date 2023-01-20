@@ -38,6 +38,8 @@ For those who don't know what I am talking about!
 
 **What is Cobalt Strike ?**
 
+Cobalt Strike is a platform for adversary simulations and red team operations. The product is designed to execute targeted attacks and emulate the post-exploitation actions of advanced threat actors.
+
 Adversary Simulations and Red Team Operations are security assessments that replicate the tactics and techniques of an advanced adversary in a network. While penetration tests focus on unpatched vulnerabilities and misconfigurations, these assessments benefit security operations and incident response.
 
 **What is Aggressor Script ?**
